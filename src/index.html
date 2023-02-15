@@ -17,7 +17,170 @@
 
     <title>exam</title>
   </head>
-  <body></body>
+  <body class="bg-white dark:bg-[#1C1C1C] dark:text-white relative">
+    <!-- Header started-->
+    <header
+      class="h-[94px] border-b-[1.5px] border-[#E5E7EA] flex justify-center items-center"
+    >
+      <div class="container mx-auto max-w-[1200px]">
+        <nav class="nav flex items-center">
+          <img src="./images/Logo.svg" alt="logo" class="cursor-pointer" />
+          <ul class="nav__list flex items-center ml-5">
+            <li
+              class="nav__list-item flex px-4 py-[18px] dark:hover:bg-[#272727] cursor-pointer hover:bg-[#F5F5F5] hover:rounded-full duration-300"
+            >
+              <h1 class="text-[18px] leading-[22px] font-medium">Categories</h1>
+            </li>
+            <li
+              class="nav__list-item group relative px-4 py-[18px] w-[147px] flex items-center justify-around cursor-pointer dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
+            >
+              <h1 class="text-[18px] leading-[22px] font-medium">About Us</h1>
+              <i class="bx bx-chevron-down"></i>
+              <ul
+                class="absolute hidden top-12 left-0 group-hover:block w-[147px] h-[194px] p-[10px] shadow-md dark:bg-[#1C1C1C] rounded-[20px] dark:shadow-white dark:shadow-sm mt-4"
+              >
+                <li
+                  class="w-[127px] h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                >
+                  News
+                </li>
+                <li
+                  class="w-[127px] h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                >
+                  Careers
+                </li>
+                <li
+                  class="w-[127px] h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                >
+                  Locations
+                </li>
+              </ul>
+            </li>
+            <li
+              class="nav__list-item group relative px-4 py-[18px] w-[147px] flex items-center justify-around cursor-pointer dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
+            >
+              <h1 class="inline-block text-[18px] leading-[22px] font-medium">
+                Help center
+              </h1>
+              <i class="bx bx-chevron-down"></i>
+              <ul
+                class="absolute hidden top-12 left-0 group-hover:block w-[147px] h-[194px] p-[10px] shadow-md dark:bg-[#1C1C1C] rounded-[20px] dark:shadow-white dark:shadow-sm mt-4"
+              >
+                <li
+                  class="w-[127px] h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                >
+                  FAQ
+                </li>
+                <li
+                  class="w-[127px] h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                >
+                  Contact us
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h1
+            class="inline-block cursor-pointer text-[18px] leading-[22px] font-semibold ml-[196px] duration-300"
+          >
+            +1 855 420 0000
+          </h1>
+          <div
+            class="mode dark:bg-[#272727] p-[21px] ml-6 bg-[#F5F5F5] dark:hover:bg-[#636161] hover:bg-[#e2dfdf] duration-300 cursor-pointer rounded-full flex justify-center items-center"
+          >
+            <img
+              id="mode-icon"
+              src="./images/Icon.svg"
+              class="w-4 h-4"
+              alt="dark-logo"
+            />
+          </div>
+          <div
+            class="login-btn group btn bg-[#299764] cursor-pointer w-[142px] h-[58px] rounded-full hover:bg-[#077743] active:bg-[#F5F5F5] flex justify-center items-center ml-4"
+          >
+            <button
+              class="group-active:text-black text-white inline-block text-[18px] leading-[22px] font-medium"
+            >
+              Login
+            </button>
+            <img
+              src="./images/exit-icon.svg"
+              alt="exit-icon"
+              class="ml-[11px]"
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header finihsed -->
+
+    <!-- modal started -->
+    <div
+      class="modal-window hidden bg-[#00000081] w-full min-h-screen fixed top-0 z-10 backdrop-blur-sm"
+    >
+      <div
+        class="modal-content duration-200 max-w-[590px] min-h-[483px] bg-white mx-auto mt-20 rounded-2xl overflow-hidden shadow-md shadow-slate-900"
+      >
+        <div class="modal-header text-slate-800 p-4 text-center mt-4">
+          <div class="flex justify-end mr-4 cursor-pointer">
+            <img
+              src="./images/icons/Exit.svg"
+              alt="/"
+              class="close-btn border-[20px] bg-slate-200 rounded-full"
+            />
+          </div>
+          <h2 class="font-bold text-slate-800 text-5xl">Login</h2>
+          <h2 class="mt-[10px]">Use the email and password that you login</h2>
+        </div>
+
+        <div
+          class="modal-body bg-white min-h-[170px] flex justify-center items-center mt-4"
+        >
+          <form action="#" class="min-w-[80%] p-3 rounded-md text-center">
+            <label for="email" class="w-full">
+              <input
+                type="email"
+                class="form-control w-[80%] mx-auto p-3 mb-4 focus:ring-4 focus:ring-sky-400 focus:outline-none border rounded-full"
+                id="email"
+                placeholder="Email"
+              />
+            </label>
+
+            <label for="password ">
+              <div class="relative">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="form-control w-[80%] mx-auto p-3 mb-4 focus:ring-4 focus:ring-sky-400 focus:outline-none border rounded-full"
+                  id="password"
+                />
+                <i class="bx bxs-show absolute right-16 top-4 text-md z-10"></i>
+              </div>
+            </label>
+            <div class="forgot-btn text-end mt-">
+              <a href="#"> Forgot password </a>
+            </div>
+            <div>
+              <a href="#">I want to create an account</a>
+            </div>
+            <button
+              class="btn block mx-auto w-[80%] my-4 bg-green-700 px-4 py-2 rounded-full text-white font-bold hover:bg-green-700 focus:ring-4 focus:ring-green-400 duration-200"
+            >
+              Login
+              <img
+                src="./images/Icon1.svg"
+                alt="exit-icon"
+                class="ml-2 inline-block"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- modal finished -->
+
+    <!-- main starter -->
+    <main></main>
+  </body>
   <!-- utils js -->
   <script src="./scripts/utils.js"></script>
   <!-- main script file -->

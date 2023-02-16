@@ -1,6 +1,6 @@
 "use strict";
 
-// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+// ---- dark mode ----//
 const mode = document.querySelector(".mode");
 const modeIcon = document.querySelector("#mode-icon");
 
@@ -61,10 +61,10 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 30,
   loop: true,
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -81,7 +81,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// ! car cards
+// ---- car cards -------//
 const cards = [
   {
     id: 1,
@@ -300,7 +300,8 @@ function renderCard(cards, filter) {
     }
   });
 }
-// ! filter button
+
+//----- filter button ----------//
 const filter__buttons = document.querySelector(".filter__buttons");
 filter__buttons.addEventListener("click", (e) => {
   if (e.target.classList.contains("fill-btn")) {
@@ -323,7 +324,7 @@ allBtn.addEventListener("click", (e) => {
   allBtn.classList.add("filter__buttons-active");
 });
 
-// ! comments
+//------- comments ---------//
 const comments = [
   {
     id: 1,
@@ -425,7 +426,7 @@ comments.forEach((el) => {
 });
 document.querySelector(".scrbr-item").classList.add("active-scroll");
 
-count = 0;
+let count = 0;
 const slider__right = document.querySelector(".slider__right");
 const slider__left = document.querySelector(".slider__left");
 

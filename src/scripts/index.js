@@ -39,13 +39,14 @@ mode.addEventListener("click", (e) => {
 
 // ! --------------------- Modal window ---------------------------------------
 const modalWindow = document.querySelector(".modal-window"),
-  signUpBtn = document.querySelector("#btn-login"),
+  loginBtn = document.querySelector("#btn-login"),
   modalContent = document.querySelector(".modal-content"),
   closeBtn = document.querySelector(".close-btn");
 
-signUpBtn.addEventListener("click", (e) => {
+loginBtn.addEventListener("click", (e) => {
   modalWindow.classList.remove("hidden");
 });
+
 closeBtn.addEventListener("click", (e) => {
   modalWindow.classList.add("hidden");
 });
